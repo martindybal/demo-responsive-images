@@ -1,0 +1,42 @@
+﻿<!doctype html>
+<!--[if lte IE 8]> <html class="no-js old-ie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Picture element</title>
+
+    <meta name="description" content="____Description____">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script>
+        document.documentElement.className = document.documentElement.className.replace("no-js", "js");
+    </script>
+
+    <link href="Resources/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <a href="#main">skip to main content</a>
+    <div class="container">
+        <main id="main" role="main" class="content">
+            <h1>
+                Picture element
+            </h1>
+            <picture>
+                <source media="(min-aspect-ratio: 1/1)" srcset="Resources/images/picture/01_1920_1080.webp 1920w" sizes="100vw" type="image/webp" />
+                <source media="(min-aspect-ratio: 1/1)" srcset="Resources/images/picture/01_1920_1080.jpg 1920w" sizes="100vw" />
+                <source media="(max-aspect-ratio: 1/1)" srcset="Resources/images/picture/01_1080_1920.webp 1080w" sizes="100vw" type="image/webp" />
+                <source media="(max-aspect-ratio: 1/1)" srcset="Resources/images/picture/01_1080_1920.jpg 1080w" sizes="100vw" />
+                <img alt="placeholder" />
+            </picture>
+        </main>
+    </div>
+</body>
+</html>
